@@ -34,7 +34,7 @@ namespace FinalProject.Test
 
 
 
-        public void TC01_SortProductByPrice_ShouldSortLowPrice()
+        public void TC01_SortProductByPriceAndBuy3Cheapest_ShouldBeSortedLowPriceAnd3CheapestProductBought()
 
         {
 
