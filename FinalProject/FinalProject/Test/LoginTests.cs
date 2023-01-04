@@ -29,7 +29,6 @@ namespace FinalProject.Test
 
             WebDrivers.CleanUp();
 
-
         }
 
         [Test]
@@ -39,8 +38,6 @@ namespace FinalProject.Test
         {
             loginpage.Login("standard_user", "secret_sauce");
             Assert.That("https://www.saucedemo.com/inventory.html", Is.EqualTo(WebDrivers.Instance.Url));
-
-
 
         }
 
@@ -58,7 +55,6 @@ namespace FinalProject.Test
             loginpage.Login("standard_user", "Uros");
             Assert.That("Epic sadface: Username and password do not match any user in this service", Is.EqualTo(loginpage.UserNotLogin.Text));
 
-
         }
 
         [Test]
@@ -67,52 +63,17 @@ namespace FinalProject.Test
 
         {
             loginpage.Login("Uros", "Uros");
-            Assert.That("Epic sadface: Username and password do not match any user in this service" , Is.EqualTo(loginpage.UserNotLogin.Text));
-
-
+            Assert.That("Epic sadface: Username and password do not match any user in this service", Is.EqualTo(loginpage.UserNotLogin.Text));
 
         }
 
-        
+
         [Test]
         public void TC05_EnterNoData_ShouldnotBeLogged()
         {
             loginpage.Login("", "");
             Assert.That("Epic sadface: Username is required", Is.EqualTo(loginpage.AssertMessage.Text));
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }

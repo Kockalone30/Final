@@ -25,12 +25,5 @@ namespace FinalProject.Pages
             element2.SelectByText(text);
         }
 
-
-
-
-
-
-
     }
-
 }

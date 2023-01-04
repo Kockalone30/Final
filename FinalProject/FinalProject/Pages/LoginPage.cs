@@ -20,8 +20,5 @@ namespace FinalProject.Pages
             ButtonLogin.Click();
         }
 
-
-
-
     }
 }
