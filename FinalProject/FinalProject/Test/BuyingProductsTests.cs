@@ -78,10 +78,6 @@ namespace FinalProject.Test
 
         }
 
-
-
-
-
         [Test]
 
 
@@ -101,13 +97,9 @@ namespace FinalProject.Test
 
             Assert.That("Item total: $39.98", Is.EqualTo(checkoutPage.ItemTotal.Text));
 
-
-
         }
 
         [Test]
-
-
 
         public void TC04CheckTotalValue_ValueShouldBeConfirmed()
 
@@ -125,13 +117,6 @@ namespace FinalProject.Test
             infoPage.ButtonContinue.Submit();
 
             Assert.That("Total: $51.81", Is.EqualTo(checkoutPage.Total.Text));
-
-
-
-
-
-
-
 
         }
 
